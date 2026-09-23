@@ -1,0 +1,332 @@
+{
+  "pt": {
+    "perfil": {
+      "nome": "Bruno Abel",
+      "idade": 21,
+      "titulo": "Desenvolvedor de Software Júnior | Full-Stack",
+      "formacao": "Técnico Especialista em Tecnologias e Programação de Sistemas de Informação (TPSI)",
+      "resumo": "Desenvolvedor focado na criação de aplicações web, sistemas de gestão e plataformas educacionais. Experiência na construção de soluções completas, desde a modelagem de banco de dados e back-end até interfaces de usuário responsivas."
+    },
+    "habilidades": {
+      "frontend": ["React", "Next.js", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3", "Tailwind CSS", "Framer Motion"],
+      "backend_db": ["Node.js", "PostgreSQL", "MySQL", "MongoDB", "Firebase", "Supabase", "REST APIs"],
+      "cms_ferramentas": ["Moodle LMS", "WordPress", "Elementor Pro", "Google Antigravity", "Vercel", "Git & GitHub", "EmailJS", "Google AI Studio"],
+      "soft_skills": ["Liderança de Equipas", "Atendimento & Relação com Clientes", "Elaboração de Propostas Técnicas", "Gestão de Projetos Web"]
+    },
+    "contato": {
+      "email": "Brunoaaraujo2005@gmail.com",
+      "cvUrl": "/cv-bruno-abel.pdf",
+      "social": [
+        { "nome": "LinkedIn", "url": "https://linkedin.com/in/brunoabel" },
+        { "nome": "GitHub", "url": "https://github.com/brunoabel" }
+      ]
+    },
+    "projetos": [
+      {
+        "id": 1,
+        "nome": "Parada 021",
+        "tagline": "Sistema de gestão completo para barbearia",
+        "descricao": "Aplicação web full-stack desenvolvida para digitalizar e automatizar a operação diária de uma barbearia. O sistema contempla agendamento online de clientes com seleção de serviço, barbeiro e horário, painel de administração para gestão de funcionários e visualização do histórico de atendimentos, tudo suportado por um back-end em tempo real via Supabase com autenticação de utilizadores.",
+        "tech": ["React", "Supabase", "PostgreSQL", "JavaScript", "Tailwind CSS"],
+        "ano": "2024",
+        "tipo": "Full-Stack Web App",
+        "imagem": null,
+        "linkSite": null,
+        "linkGithub": null
+      },
+      {
+        "id": 2,
+        "nome": "Espaço 77",
+        "tagline": "Presença digital para bar histórico do Porto",
+        "descricao": "Plataforma web desenvolvida para o Espaço 77, um bar histórico localizado no Porto. O projeto incluiu a criação de um cardápio digital dinâmico com categorias e preços facilmente editáveis, integração com QR Code por mesa para acesso instantâneo ao menu sem app, e deploy contínuo via Vercel para atualizações sem interrupção. O site está disponível em produção em espaco77.pt.",
+        "tech": ["React", "Vercel", "JavaScript", "CSS3"],
+        "ano": "2024",
+        "tipo": "Website & Menu Digital",
+        "imagem": null,
+        "linkSite": "https://espaco77.pt",
+        "linkGithub": null
+      },
+      {
+        "id": 3,
+        "nome": "ABEX",
+        "tagline": "Biblioteca pessoal de jogos digitais",
+        "descricao": "Projeto final de curso desenvolvido com React e TypeScript. Plataforma que consome a RAWG API — base de dados com mais de 500 mil jogos — para permitir ao utilizador pesquisar, descobrir e organizar os seus jogos favoritos. Conta com autenticação de utilizadores via Firebase, persistência de coleções personalizadas, filtros por género e plataforma, e uma interface responsiva construída com Tailwind CSS.",
+        "tech": ["React", "TypeScript", "Tailwind CSS", "Firebase", "RAWG API"],
+        "ano": "2024",
+        "tipo": "Projeto Final de Curso",
+        "imagem": null,
+        "linkSite": null,
+        "linkGithub": null
+      },
+      {
+        "id": 4,
+        "nome": "AB Finds",
+        "tagline": "Ferramenta de sourcing e importação da China",
+        "descricao": "Protótipo web criado para otimizar o processo de importação de produtos da China. A plataforma permite catalogar fornecedores com avaliações e contactos, realizar simulações automáticas de custos de envio considerando peso, dimensões e método de transporte (marítimo/aéreo), e comparar orçamentos lado a lado. Desenvolvido com React e deployado na Vercel.",
+        "tech": ["React", "JavaScript", "Vercel", "CSS3"],
+        "ano": "2024",
+        "tipo": "Ferramenta Web / Protótipo",
+        "imagem": null,
+        "linkSite": null,
+        "linkGithub": null
+      },
+      {
+        "id": 5,
+        "nome": "Plataformas Institucionais",
+        "tagline": "Presença digital para Advance Station & Instituto Unicenter",
+        "descricao": "Desenvolvimento de dois sites institucionais distintos — Advance Station e Instituto Unicenter — com foco em identidade visual corporativa e experiência mobile-first. Os projetos envolveram a criação de layouts responsivos do zero com Elementor Pro, customização avançada de CSS para design personalizado além dos templates padrão, e otimização para motores de busca (SEO on-page).",
+        "tech": ["WordPress", "Elementor Pro", "HTML5", "CSS3", "SEO"],
+        "ano": "2023",
+        "tipo": "Websites Institucionais",
+        "imagem": null,
+        "linkSite": null,
+        "linkGithub": null
+      },
+      {
+        "id": 6,
+        "nome": "App Jurídica & Idiomas",
+        "tagline": "Proposta técnica para aplicativo mobile",
+        "descricao": "Elaboração de proposta técnica detalhada para uma aplicação mobile multiplataforma. O conceito integra um scanner de documentos jurídicos com OCR para extração de texto, uma linha do tempo interativa para acompanhamento de processos legais, e módulos de aprendizado de idiomas com flashcards e exercícios. A proposta incluiu arquitetura de sistema, estimativa de horas e stack tecnológica recomendada.",
+        "tech": ["Proposta Técnica", "React Native", "OCR", "Mobile"],
+        "ano": "2024",
+        "tipo": "Proposta Técnica",
+        "imagem": null,
+        "linkSite": null,
+        "linkGithub": null
+      }
+    ],
+    "experiencia": [
+      {
+        "cargo": "Desenvolvedor Web Freelance & Consultor Frontend",
+        "empresa": "Prestação de Serviços Independentes",
+        "periodo": "Presente",
+        "atividades": [
+          "Desenvolvimento de plataformas web modernas, responsivas e de alta performance orientadas aos objetivos de negócio das empresas.",
+          "Conceção e implementação de soluções digitais personalizadas — desde websites corporativos e cardápios/catálogos digitais a ferramentas de gestão.",
+          "Otimização de SEO on-page, experiência do utilizador (UX/UI), velocidade de carregamento e integração de APIs e serviços digitais."
+        ]
+      },
+      {
+        "cargo": "Estagiário de Desenvolvimento & TI",
+        "empresa": "Instituição de Ensino",
+        "periodo": "Maio 2025 – Março 2026",
+        "atividades": [
+          "Customização avançada e suporte técnico contínuo para a plataforma Moodle LMS.",
+          "Desenvolvimento e manutenção de websites institucionais responsivos utilizando WordPress e Elementor Pro.",
+          "Colaboração direta com equipes multidisciplinares e suporte técnico de TI a utilizadores."
+        ]
+      },
+      {
+        "cargo": "Formação Técnica Superior em TPSI",
+        "empresa": "Ensino Técnico Superior",
+        "periodo": "Março 2025 – Março 2026",
+        "atividades": [
+          "Curso Técnico Superior Profissional em Tecnologias e Programação de Sistemas de Informação (TPSI).",
+          "Formação prática intensiva em arquitetura de software, bases de dados relacionais/NoSQL e desenvolvimento full-stack.",
+          "Desenvolvimento do projeto de fim de curso ABEX com React, TypeScript e Firebase."
+        ]
+      }
+    ],
+    "ui": {
+      "nav": {
+        "sobre": "Sobre",
+        "habilidades": "Habilidades",
+        "projetos": "Projetos",
+        "experiencia": "Experiência",
+        "contato": "Vamos falar"
+      },
+      "hero": { "scroll": "Role para explorar", "downloadCv": "Descarregar CV" },
+      "sobre": {
+        "tag": "01. Sobre Mim",
+        "title": "Transformar ideias complexas em interfaces rápidas, intuitivas e de elevado valor."
+      },
+      "projetos": {
+        "tag": "02. Seleção de Projetos",
+        "title": "Trabalhos recentes e experiências práticas.",
+        "verSite": "Ver site",
+        "verGithub": "GitHub",
+        "emBreve": "Link em breve"
+      },
+      "habilidades": {
+        "tag": "03. Tecnologias & Habilidades",
+        "cat_frontend": "Front-End",
+        "cat_backend_db": "Back-End & BD",
+        "cat_cms_ferramentas": "Ferramentas",
+        "cat_soft_skills": "Soft Skills"
+      },
+      "experiencia": { "tag": "04. Trajetória Profissional" },
+      "contato": {
+        "available": "Disponível para novos projetos",
+        "title": "Vamos construir algo incrível juntos.",
+        "copyEmail": "Copiar e-mail",
+        "copied": "Copiado!"
+      },
+      "footer": { "rights": "Todos os direitos reservados." }
+    }
+  },
+  "en": {
+    "perfil": {
+      "nome": "Bruno Abel",
+      "idade": 21,
+      "titulo": "Junior Software Developer | Full-Stack",
+      "formacao": "Specialist Technician in Information Systems Technologies & Programming (TPSI)",
+      "resumo": "Developer focused on building web applications, management systems, and educational platforms. Experience crafting end-to-end solutions, from database modeling and back-end to responsive user interfaces."
+    },
+    "habilidades": {
+      "frontend": ["React", "Next.js", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3", "Tailwind CSS", "Framer Motion"],
+      "backend_db": ["Node.js", "PostgreSQL", "MySQL", "MongoDB", "Firebase", "Supabase", "REST APIs"],
+      "cms_ferramentas": ["Moodle LMS", "WordPress", "Elementor Pro", "Google Antigravity", "Vercel", "Git & GitHub", "EmailJS", "Google AI Studio"],
+      "soft_skills": ["Team Leadership", "Client Relations & Support", "Technical Proposal Development", "Web Project Management"]
+    },
+    "contato": {
+      "email": "Brunoaaraujo2005@gmail.com",
+      "cvUrl": "/cv-bruno-abel.pdf",
+      "social": [
+        { "nome": "LinkedIn", "url": "https://linkedin.com/in/brunoabel" },
+        { "nome": "GitHub", "url": "https://github.com/brunoabel" }
+      ]
+    },
+    "projetos": [
+      {
+        "id": 1,
+        "nome": "Parada 021",
+        "tagline": "Full barbershop management system",
+        "descricao": "Full-stack web application built to digitalize and automate a barbershop's daily operations. The system includes online client scheduling with service, barber, and time slot selection, an admin dashboard for staff management and appointment history, all powered by a real-time Supabase back-end with user authentication.",
+        "tech": ["React", "Supabase", "PostgreSQL", "JavaScript", "Tailwind CSS"],
+        "ano": "2024",
+        "tipo": "Full-Stack Web App",
+        "imagem": null,
+        "linkSite": null,
+        "linkGithub": null
+      },
+      {
+        "id": 2,
+        "nome": "Espaço 77",
+        "tagline": "Digital presence for a historic Porto bar",
+        "descricao": "Web platform built for Espaço 77, a historic bar in Porto. The project included a dynamic digital menu with easily editable categories and prices, per-table QR Code integration for instant menu access with no app required, and continuous deployment via Vercel for zero-downtime updates. The site is live at espaco77.pt.",
+        "tech": ["React", "Vercel", "JavaScript", "CSS3"],
+        "ano": "2024",
+        "tipo": "Website & Digital Menu",
+        "imagem": null,
+        "linkSite": "https://espaco77.pt",
+        "linkGithub": null
+      },
+      {
+        "id": 3,
+        "nome": "ABEX",
+        "tagline": "Personal digital game library",
+        "descricao": "Final degree project built with React and TypeScript. Platform consuming the RAWG API — a database of over 500,000 games — enabling users to search, discover, and organize their favorite games. Features Firebase authentication, persistent personal collections, genre and platform filters, and a fully responsive UI built with Tailwind CSS.",
+        "tech": ["React", "TypeScript", "Tailwind CSS", "Firebase", "RAWG API"],
+        "ano": "2024",
+        "tipo": "Final Degree Project",
+        "imagem": null,
+        "linkSite": null,
+        "linkGithub": null
+      },
+      {
+        "id": 4,
+        "nome": "AB Finds",
+        "tagline": "China sourcing & import optimization tool",
+        "descricao": "Web prototype built to streamline the process of importing products from China. The platform allows cataloging suppliers with ratings and contacts, running automatic shipping cost simulations based on weight, dimensions, and transport method (sea/air), and side-by-side quote comparison. Built with React and deployed on Vercel.",
+        "tech": ["React", "JavaScript", "Vercel", "CSS3"],
+        "ano": "2024",
+        "tipo": "Web Tool / Prototype",
+        "imagem": null,
+        "linkSite": null,
+        "linkGithub": null
+      },
+      {
+        "id": 5,
+        "nome": "Institutional Platforms",
+        "tagline": "Advance Station & Instituto Unicenter digital presence",
+        "descricao": "Development of two distinct institutional websites — Advance Station and Instituto Unicenter — with a focus on corporate visual identity and mobile-first experience. Projects involved building responsive layouts from scratch using Elementor Pro, advanced CSS customization beyond standard templates, and on-page SEO optimization for better search engine visibility.",
+        "tech": ["WordPress", "Elementor Pro", "HTML5", "CSS3", "SEO"],
+        "ano": "2023",
+        "tipo": "Institutional Websites",
+        "imagem": null,
+        "linkSite": null,
+        "linkGithub": null
+      },
+      {
+        "id": 6,
+        "nome": "Legal & Language App",
+        "tagline": "Technical proposal for a mobile application",
+        "descricao": "Detailed technical proposal for a cross-platform mobile application. The concept integrates a legal document scanner with OCR for text extraction, an interactive timeline for tracking legal proceedings, and language learning modules with flashcards and exercises. The proposal included system architecture, hour estimates, and a recommended technology stack.",
+        "tech": ["Technical Proposal", "React Native", "OCR", "Mobile"],
+        "ano": "2024",
+        "tipo": "Technical Proposal",
+        "imagem": null,
+        "linkSite": null,
+        "linkGithub": null
+      }
+    ],
+    "experiencia": [
+      {
+        "cargo": "Freelance Web Developer & Frontend Consultant",
+        "empresa": "Independent Web Services",
+        "periodo": "Present",
+        "atividades": [
+          "Development of modern, responsive, high-performance web platforms tailored to business goals and customer growth.",
+          "Design and implementation of custom digital solutions — from corporate websites and digital catalogs/menus to operational web tools.",
+          "On-page SEO optimization, user experience (UX/UI) refinement, fast page load speeds, and API & digital service integration."
+        ]
+      },
+      {
+        "cargo": "IT & Development Intern",
+        "empresa": "Educational Institution",
+        "periodo": "May 2025 – March 2026",
+        "atividades": [
+          "Advanced customization and continuous technical support for the Moodle LMS platform.",
+          "Development and maintenance of responsive institutional websites using WordPress and Elementor Pro.",
+          "Direct collaboration with multidisciplinary teams and end-user IT technical support."
+        ]
+      },
+      {
+        "cargo": "Higher Technical Specialization in TPSI",
+        "empresa": "Higher Technical Education",
+        "periodo": "March 2025 – March 2026",
+        "atividades": [
+          "Higher Professional Technical Degree in Information Systems Technologies & Programming (TPSI).",
+          "Intensive practical training in software architecture, relational/NoSQL databases, and full-stack web development.",
+          "Development of the ABEX capstone project using React, TypeScript, and Firebase."
+        ]
+      }
+    ],
+    "ui": {
+      "nav": {
+        "sobre": "About",
+        "habilidades": "Skills",
+        "projetos": "Projects",
+        "experiencia": "Experience",
+        "contato": "Let's talk"
+      },
+      "hero": { "scroll": "Scroll to explore", "downloadCv": "Download CV" },
+      "sobre": {
+        "tag": "01. About Me",
+        "title": "Turning complex ideas into fast, intuitive, high-value digital experiences."
+      },
+      "projetos": {
+        "tag": "02. Selected Projects",
+        "title": "Recent work and practical experience.",
+        "verSite": "View site",
+        "verGithub": "GitHub",
+        "emBreve": "Link coming soon"
+      },
+      "habilidades": {
+        "tag": "03. Technologies & Skills",
+        "cat_frontend": "Front-End",
+        "cat_backend_db": "Back-End & DB",
+        "cat_cms_ferramentas": "Tools",
+        "cat_soft_skills": "Soft Skills"
+      },
+      "experiencia": { "tag": "04. Career Trajectory" },
+      "contato": {
+        "available": "Available for new projects",
+        "title": "Let's build something great together.",
+        "copyEmail": "Copy email",
+        "copied": "Copied!"
+      },
+      "footer": { "rights": "All rights reserved." }
+    }
+  }
+}

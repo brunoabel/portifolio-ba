@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-base text-white antialiased;
+    font-feature-settings: "ss01" on, "ss02" on;
+  }
+  ::selection {
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
+
+@layer components {
+  /* Borda fina com glow no hover — ecoa o traço do logo */
+  .stroke-glow {
+    @apply border border-white/[0.08] transition-all duration-500;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .stroke-glow:hover {
+    @apply border-white/30;
+    box-shadow: 0 0 24px rgba(255, 255, 255, 0.08),
+      inset 0 0 12px rgba(255, 255, 255, 0.04);
+  }
+
+  /* Glassmorphism sutil — usar com moderação (1-2 elementos por tela) */
+  .glass-panel {
+    background: rgba(20, 20, 22, 0.6);
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+    @apply border border-white/[0.06];
+  }
+
+  /* Underline que se desenha no hover, tipo o traço da caneta */
+  .link-draw {
+    @apply relative inline-block;
+  }
+  .link-draw::after {
+    content: "";
+    @apply absolute left-0 -bottom-1 h-px w-full bg-white origin-left scale-x-0;
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .link-draw:hover::after {
+    @apply scale-x-100;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
