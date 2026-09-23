@@ -94,67 +94,58 @@ export default function HeroSection() {
       </div>
 
       {/* ── INTRO GROUP: SVG Logo (draws itself) + Typewriter name ──
-          Centered on screen during intro, then shrinks + migrates
-          to the top-left corner (the header logo slot).
+          Centered on screen during intro, then fades out smoothly to reveal hero content.
       ──────────────────────────────────────────────────────────── */}
-      <motion.div
-        className="absolute z-30 flex flex-col items-center gap-5"
-        initial={{
-          top: "50%",
-          left: "50%",
-          x: "-50%",
-          y: "-50%",
-          scale: 1,
-        }}
-        animate={
-          phase >= 2
-            ? { top: 14, left: 16, x: 0, y: 0, scale: 0.18 }
-            : { top: "50%", left: "50%", x: "-50%", y: "-50%", scale: 1 }
-        }
-        style={{ transformOrigin: phase >= 2 ? "top left" : "center center" }}
-        transition={{ duration: 1.0, ease: [0.16, 1, 0.3, 1] }}
-      >
-        {/* Original SVG Logo with stroke draw animation */}
-        <Logo
-          className="w-[180px] sm:w-[220px] h-auto"
-          strokeWidth={3}
-          playOnMount
-          onComplete={handleLogoComplete}
-        />
+      <AnimatePresence>
+        {phase < 2 && (
+          <motion.div
+            key="intro-overlay"
+            className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-5 bg-base pointer-events-none"
+            initial={{ opacity: 1 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          >
+            {/* Original SVG Logo with stroke draw animation */}
+            <Logo
+              className="w-[180px] sm:w-[220px] h-auto"
+              strokeWidth={3}
+              playOnMount
+              onComplete={handleLogoComplete}
+            />
 
-        {/* Typewriter name — slides in after logo draws */}
-        <AnimatePresence>
-          {phase >= 1 && (
-            <motion.div
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.35 }}
-              className="text-center select-none"
-              style={{ whiteSpace: "nowrap" }}
-            >
-              <span
-                className="font-display font-extralight text-xl sm:text-3xl md:text-4xl text-white uppercase"
-                style={{ letterSpacing: "0.25em" }}
+            {/* Typewriter name — slides in after logo draws */}
+            {phase >= 1 && (
+              <motion.div
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.35 }}
+                className="text-center select-none"
+                style={{ whiteSpace: "nowrap" }}
               >
-                {typedName}
-                {/* Blinking cursor */}
-                {!typingDone && (
-                  <motion.span
-                    className="inline-block w-[2px] h-5 sm:h-7 bg-white ml-1 align-middle"
-                    animate={{ opacity: [1, 0] }}
-                    transition={{
-                      duration: 0.48,
-                      repeat: Infinity,
-                      repeatType: "reverse",
-                    }}
-                  />
-                )}
-              </span>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </motion.div>
+                <span
+                  className="font-display font-extralight text-xl sm:text-3xl md:text-4xl text-white uppercase"
+                  style={{ letterSpacing: "0.25em" }}
+                >
+                  {typedName}
+                  {/* Blinking cursor */}
+                  {!typingDone && (
+                    <motion.span
+                      className="inline-block w-[2px] h-5 sm:h-7 bg-white ml-1 align-middle"
+                      animate={{ opacity: [1, 0] }}
+                      transition={{
+                        duration: 0.48,
+                        repeat: Infinity,
+                        repeatType: "reverse",
+                      }}
+                    />
+                  )}
+                </span>
+              </motion.div>
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* ── HERO CONTENT — revealed after logo settles in header ── */}
       <div className="relative z-10 max-w-5xl pt-16 sm:pt-0">
